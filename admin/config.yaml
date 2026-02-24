@@ -1,0 +1,17 @@
+backend:
+  name: github
+  repo: TienDong_EEI.github.io # Thay bằng tên repo của bạn
+  branch: main
+
+media_folder: "images/uploads" # Nơi lưu trữ hình ảnh khi bạn tải lên từ web
+public_folder: "/images/uploads"
+
+collections:
+  - name: "projects"
+    label: "Dự án tiêu biểu"
+    folder: "_projects" # CMS sẽ tạo thư mục này để lưu các file bài viết (.md)
+    create: true # Cho phép tạo dự án mới trực tiếp trên web
+    fields:
+      - {label: "Tiêu đề", name: "title", widget: "string"}
+      - {label: "Mô tả dự án", name: "description", widget: "text"}
+      - {label: "Nội dung chi tiết", name: "body", widget: "markdown"}
