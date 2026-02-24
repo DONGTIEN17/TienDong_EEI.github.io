@@ -1,16 +1,17 @@
 backend:
   name: git-gateway
-  repo: TienDong_EEI.github.io # Thay bằng tên repo của bạn
+  repo: DONGTIEN17/TienDong_EEI.github.io # Đã thêm tên user của bạn
   branch: main
 
-media_folder: "images/uploads" # Nơi lưu trữ hình ảnh khi bạn tải lên từ web
+media_folder: "images/uploads"
 public_folder: "/images/uploads"
 
 collections:
   - name: "projects"
     label: "Dự án tiêu biểu"
-    folder: "_projects" # CMS sẽ tạo thư mục này để lưu các file bài viết (.md)
-    create: true # Cho phép tạo dự án mới trực tiếp trên web
+    folder: "_projects"
+    create: true
+    slug: "{{slug}}" # Thêm dòng này để tên file lưu trên GitHub đẹp hơn
     fields:
       - {label: "Tiêu đề", name: "title", widget: "string"}
       - {label: "Mô tả dự án", name: "description", widget: "text"}
