@@ -1,5 +1,5 @@
 backend:
-  name: github
+  name: git-gateway
   repo: TienDong_EEI.github.io # Thay bằng tên repo của bạn
   branch: main
 
