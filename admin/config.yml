@@ -1,6 +1,4 @@
 backend:
   name: git-gateway
-  repo: DONGTIEN17/TienDong_EEI.github.io
+  repo: DONGTIEN17/TienDong_EEI.github.io # Phải có DONGTIEN17/ phía trước
   branch: main
-
-# Xóa bỏ các dòng thừa nếu có, chỉ để lại cấu hình sạch như trên
