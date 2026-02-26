@@ -1,18 +1,6 @@
 backend:
   name: git-gateway
-  repo: DONGTIEN17/TienDong_EEI.github.io # Đã thêm tên user của bạn
+  repo: DONGTIEN17/TienDong_EEI.github.io
   branch: main
 
-media_folder: "images/uploads"
-public_folder: "/images/uploads"
-
-collections:
-  - name: "projects"
-    label: "Dự án tiêu biểu"
-    folder: "_projects"
-    create: true
-    slug: "{{slug}}" # Thêm dòng này để tên file lưu trên GitHub đẹp hơn
-    fields:
-      - {label: "Tiêu đề", name: "title", widget: "string"}
-      - {label: "Mô tả dự án", name: "description", widget: "text"}
-      - {label: "Nội dung chi tiết", name: "body", widget: "markdown"}
+# Xóa bỏ các dòng thừa nếu có, chỉ để lại cấu hình sạch như trên
